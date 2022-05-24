@@ -2,10 +2,7 @@
     <head>
         <title>Mask Money</title>
     </head>
-    <script src="jquery-1.7.2.min.js"></script>
     <script src="js/ValidarIndiceFinanceiro.js"></script>
-    <script src="js/ValidarNumeros.js"></script>
-    <script src="js/Funcoes.js"></script>
 
     <body>
         <style>
@@ -17,7 +14,7 @@
         </style>
         <div class="form-control">
             <label for="">Campo de valor monetário: </label>
-            <input type="text" class="validaNumero validaFormato">
+            <input type="text" onkeypress="Formata(this,20,event,2)">
         </div>
     </body>
 </html>
